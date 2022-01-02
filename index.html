@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>呱呱代挂</title>
+		<link href="//at.alicdn.com/t/font_1982723_3ves5qdacbf.css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/css/style-starter.css">
+		<link rel="stylesheet" href="/css/rocket.css">
+		<script>
+			setTimeout(function() {
+				$("#hitokoto").fadeOut(1000);
+			}, 5000);
+
+			function goo() {
+				fetch('https://v1.hitokoto.cn')
+					.then(function(res) {
+						return res.json();
+					})
+					.then(function(data) {
+						var hitokoto = document.getElementById('hitokoto');
+
+						hitokoto.innerHTML = data.hitokoto;
+
+						$("#hitokoto").fadeIn(1000);
+					})
+					.catch(function(err) {
+						console.error(err);
+					})
+				setTimeout(function() {
+					$("#hitokoto").fadeOut(1000);
+				}, 5000);
+			}
+			setInterval("goo()", 5800);
+		</script>
+	</head>
+	<body>
+		<!--header-->
+		<header id="site-header" class="fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg stroke px-0">
+					<h1> <a class="navbar-brand" href="/">
+							<span class="iconfont iconhuojian1"></span> 呱呱代挂</a></h1>
+					<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="/">首页 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item @@about__active">
+								<a class="nav-link" href="https://gua.uulu.cc/login">用户中心</a>
+							</li>
+						</ul>
+					</div>
+					<!-- toggle switch for light and dark theme -->
+					<div class="mobile-position" style="margin-left: 5px;">
+						<nav class="navigation">
+							<div class="theme-switch-wrapper">
+								<label class="theme-switch" for="checkbox">
+									<input type="checkbox" id="checkbox">
+									<div class="mode-container">
+										<i class="gg-sun"></i>
+										<i class="gg-moon"></i>
+									</div>
+								</label>
+							</div>
+						</nav>
+					</div>
+					<!-- //toggle switch for light and dark theme -->
+				</nav>
+			</div>
+		</header>
+		<!--/header-->
+		<!-- main-slider -->
+		<section class="w3l-main-slider" id="home">
+			<div class="companies20-content">
+				<div class="owl-one owl-carousel owl-theme">
+					<div class="item">
+						<li>
+							<div class="slider-info banner-view bg bg2">
+								<div class="banner-info">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-6 banner-info-bg">
+												<h5>呱呱代挂 </h5>
+												<p class="mt-md-4 mt-3">此刻我们将重新定义等级代挂
+												</p>
+												<a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2"
+													style="background: #007bff;"
+													href="https://gua.uulu.cc/login"> 登录</a>
+												<a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2"
+													href="https://gua.uulu.cc/login">
+													注册</a>
+											</div>
+											<div class="col-lg-5 offset-lg-1">
+												<div class="video-link">
+													<div class="rocket">
+														<div class="rocket-ship--ship">
+															<div class="rocket-ship--fuselage">
+																<svg x="0px" y="0px" viewBox="0 0 279 302.9">
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#FFFFFF"
+																		d="M59.9,218.5l1.9,19.1c0.9,6.9,2.1,13.6,3.4,19.9l3.8,15L34.1,282
+                                                          l-0.7-6.4c-1.3-10.4-2.7-19.8-4.4-28.4l-0.6-2.6L59.9,218.5L59.9,218.5z M218.1,218.5l32.5,26.9l-1.6,6.8c-1.7,8.6-3.2,18-4.4,28.4
+                                                          l-0.2,1.6l-35.4-9.6l3.8-15c1.3-6.4,2.5-13,3.4-19.9L218.1,218.5z" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#FFFFFF"
+																		d="M66.4,112.5h145.1l1,4.4c4.4,21.9,6.6,46.9,6.6,75.7
+                                                          c0,32.3-4,60-10.8,83.1l-2.3,7.1h-67H72l-2.3-7.1c-6.9-23.1-10.8-50.8-10.8-83.1c0-28.9,2.1-53.9,6.6-75.7L66.4,112.5z" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#FFFFFF" d="M139,4.7l9.2,6.4c24.5,18.2,42.2,40.5,53.9,69.8l5.4,16.6H70.6
+                                                          L76,80.9c11.6-29.3,29.4-51.6,53.9-69.8L139,4.7z" />
+																	<polygon fill-rule="evenodd" clip-rule="evenodd"
+																		fill="rgba(242, 242, 242,0.5)" points="70.4,97.5 207.6,97.5 209.6,104.2 211.5,112.5
+                                                          66.5,112.5 68.4,104.2 70.4,97.5 	" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#f2f2f2" d="M91,145.4c0-26.5,21.5-47.9,48-47.9s48,21.5,48,47.9
+                                                          s-21.5,47.9-48,47.9S91,171.9,91,145.4L91,145.4z" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#FFFFFF"
+																		d="M106.1,145.3c0-18.2,14.7-32.9,32.9-32.9s32.9,14.7,32.9,32.9
+                                                          c0,18.2-14.7,32.9-32.9,32.9S106.1,163.5,106.1,145.3L106.1,145.3z" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#FFFFFF" d="M18.5,210.1l2.3,6.4c6.3,18.2,10.8,40.5,13.8,69.8l1.4,16.6H1
+                                                          l1.4-16.6c3-29.3,7.5-51.6,13.8-69.8L18.5,210.1z" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#FFFFFF" d="M259.5,210.1l2.3,6.4c6.3,18.2,10.8,40.5,13.8,69.8l1.4,16.6
+                                                          h-34.9l1.4-16.6c3-29.3,7.5-51.6,13.8-69.8L259.5,210.1z" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		fill="#FFFFFF" d="M139,210.1l2.3,6.4c6.2,18.2,10.7,40.5,13.7,69.8l1.4,16.6h-34.8
+                                                          l1.4-16.6c3-29.3,7.5-51.6,13.7-69.8L139,210.1z" />
+																</svg>
+															</div>
+															<div class="rocket-ship--contrail">
+																<div class="rocket-ship--tail">
+																	<div class="rocket-ship--flame"></div>
+																</div>
+																<div class="rocket-ship--cloud">
+																	<div class="rocket-ship--smoke -one"></div>
+																	<div class="rocket-ship--smoke -two"></div>
+																	<div class="rocket-ship--smoke -three"></div>
+																	<div class="rocket-ship--smoke -four"></div>
+																	<div class="rocket-ship--smoke -five"></div>
+																	<div class="rocket-ship--smoke -six"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /main-slider -->
+		<!-- home page block1 -->
+		<section id="about" class="home-services pt-lg-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="box-wrap">
+							<div class="box-wrap-grid">
+								<div class="icon">
+									<span class="iconfont iconHome"></span>
+								</div>
+								<div class="info">
+									<h4><a href="javascripe:;">一站式管理</a></h4>
+									<p>全网独家优势</p>
+								</div>
+							</div>
+							<p class="mt-4">使用本平台进行挂机，无需安装任何额外软件，注册登陆后添加号码即可正常运行，您可以随时在电脑/手机登陆本网站进行功能设置。</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+						<div class="box-wrap">
+							<div class="box-wrap-grid">
+								<div class="icon">
+									<span class="iconfont iconBookmark"></span>
+								</div>
+								<div class="info">
+									<h4><a href="javascripe:;">超稳定代挂</a></h4>
+									<p>全网独家优势</p>
+								</div>
+							</div>
+							<p class="mt-4">独家定制专业代挂软件，同步更新最新加速协议，做到稳定不冻结，每天都能稳定执行所有等级加速任务。</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+						<div class="box-wrap">
+							<div class="box-wrap-grid">
+								<div class="icon">
+									<span class="iconfont iconDiscovery"></span>
+								</div>
+								<div class="info">
+									<h4><a href="javascripe:;">分布服务器</a></h4>
+									<p>全网独家优势</p>
+								</div>
+							</div>
+							<p class="mt-4">分布式服务器全天24H秒级全能挂机，执行所有等级加速任务，快速稳定，无需担心因为平台用户数量增多而影响到效率。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //home page block1 -->
+		<!-- about page about section -->
+		<section class="w3l-index3" id="about2">
+			<div class="midd-w3 py-5">
+				<div class="container py-lg-5 py-md-3">
+					<div class="row">
+						<div class="col-lg-7 mb-lg-0 mb-md-5 mb-4 align-self">
+							<h3 class="title-left mx-0">系统优势：</h3>
+							<p class="mt-md-4 mt-3">异常提醒：当您的账号出现异常时，系统会通过短信提醒您.</p>
+							<p class="mt-md-4 mt-3">全国代挂：我们的服务器遍布全国30个省份，代挂地区任你选择.</p>
+							<p class="mt-md-4 mt-3">支持设备锁：全站服务支持开设备锁代挂，同时实现开通秒开始加速.</p>
+							<a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2"
+								href="https://gua.uulu.cc/login"> 加入我们</a>
+						</div>
+						<div class="col-lg-5">
+							<div class="position-relative">
+								<img src="https://gitee.com/guaee/gua/raw/master/dg_gua_gg/about.png" alt class="radius-image img-fluid"
+									style="width: 70%;margin-left: 4rem;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="w3l-mobile-content-6 py-5">
+			<div class="mobile-info py-lg-5 py-md-4 py-2">
+				<div class="container">
+					<h6 class="title-small text-center">详情介绍</h6>
+					<h3 class="title-big mb-5 text-center">我们所拥有的业务</h3>
+					<div class="row mobile-info-inn mx-lg-0">
+						<div class="col-lg-4 mobile-right text-right">
+							<div class="row mobile-right-grids mb-lg-5 mb-4">
+								<div class="col-10 mobile-right-info">
+									<h6><a href="#url">多号管理</a></h6>
+									<p>不再害怕多个账号管理麻烦，一键多个账号来回切换.</p>
+								</div>
+								<div class="col-2 mobile-right-icon">
+									<div class="mobile-icon">
+										<span class="iconfont iconshiftManagement"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row mobile-right-grids mb-lg-5 mb-4">
+								<div class="col-10 mobile-right-info">
+									<h6><a href="#url">漏挂补挂</a></h6>
+									<p>若当天有漏挂业务可在APP内提交补挂，系统会在5分钟内为您开始代挂.</p>
+								</div>
+								<div class="col-2 mobile-right-icon">
+									<div class="mobile-icon">
+										<span class="iconfont icondutyManagement"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row mobile-right-grids">
+								<div class="col-10 mobile-right-info">
+									<h6><a href="#url">更新密码 </a></h6>
+									<p>一键更新密码，避免旧密码忘记无法更新密码的问题.</p>
+								</div>
+								<div class="col-2 mobile-right-icon">
+									<div class="mobile-icon">
+										<span class="iconfont iconlogbook"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 mobile-left px-lg-5">
+							<img src="https://gitee.com/guaee/gua/raw/master/dg_gua_gg/mobile.png" class="img-fluid radius-image" alt>
+						</div>
+						<div class="col-lg-4 mobile-right">
+							<div class="row mobile-right-grids mb-lg-5 mb-4">
+								<div class="col-2 mobile-right-icon">
+									<div class="mobile-icon">
+										<span class="iconfont iconwasreleased"></span>
+									</div>
+								</div>
+								<div class="col-10 mobile-right-info">
+									<h6><a href="#url">卡密续费</a></h6>
+									<p>摆脱续费手续繁琐的问题，一键完成相应套餐的快速续费.</p>
+								</div>
+							</div>
+							<div class="row mobile-right-grids mb-lg-5 mb-4">
+								<div class="col-2 mobile-right-icon">
+									<div class="mobile-icon">
+										<span class="iconfont iconvalidationResults"></span>
+									</div>
+								</div>
+								<div class="col-10 mobile-right-info">
+									<h6><a href="#url">等级计算</a></h6>
+									<p>快速计算升到下一级所需天数，一眼看出有/无代挂的升级速度.</p>
+								</div>
+							</div>
+							<div class="row mobile-right-grids">
+								<div class="col-2 mobile-right-icon">
+									<div class="mobile-icon">
+										<span class="iconfont icondailyBriefing"></span>
+									</div>
+								</div>
+								<div class="col-10 mobile-right-info">
+									<h6><a href="#url">帮助中心</a></h6>
+									<p>用户在使用过程中若有疑问可先在帮助中心寻找答案，若未找到答案可联系客服.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="w3l-footer-29-main">
+			<div class="footer-29 py-5">
+				<div class="container py-lg-4">
+					<div class="row footer-top-29">
+						<div class="col-lg-10 col-md-6 footer-list-29 footer-1 pr-lg-5">
+							<div class="footer-logo mb-4">
+								<a class="navbar-brand" href="index.html">
+									<span class="iconfont iconhuojian1" style="color: #fff;"></span> 呱呱代挂</a>
+							</div>
+							<p id="hitokoto">好好努力 带上微笑 没时间纠结 没时间计较</p>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-5 col-5 footer-list-29 footer-2 mt-md-0 mt-5">
+
+							<ul>
+								<h6 class="footer-title-29">链接</h6>
+								<li><a href="https://gua.uulu.cc/login">用户中心</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="w3l-copyright text-center"
+				style="background-color: white !important;border-top:none !important;padding:0.6rem 0 !important;">
+				<div class="container">
+					<p class="copy-footer-29" style="color: black;">&copy;呱呱不识字</p>
+				</div>
+				<button onclick="topFunction()" id="movetop"
+					style="background-color: rgba(104,104,104,0.49) !important;" title="Go to top">
+					&#10548;
+				</button>
+				<script>
+					window.onscroll = function() {
+						scrollFunction()
+					};
+
+					function scrollFunction() {
+						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+							document.getElementById("movetop").style.display = "block";
+						} else {
+							document.getElementById("movetop").style.display = "none";
+						}
+					}
+					function topFunction() {
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
+					}
+				</script>
+			</section>
+		</section>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="/js/theme-change.js"></script>
+		<script src="/js/circles.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+		<script src="/js/jquery.countup.js"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+		<script src="/js/owl.carousel.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.owl-one').owlCarousel({
+					loop: true,
+					margin: 0,
+					nav: false,
+					responsiveClass: true,
+					autoplay: true,
+					autoplayTimeout: 5000,
+					autoplaySpeed: 1000,
+					autoplayHoverPause: false,
+					responsive: {
+						0: {
+							items: 1
+						},
+						480: {
+							items: 1
+						},
+						667: {
+							items: 1
+						},
+						1000: {
+							items: 1
+						}
+					}
+				})
+			})
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#owl-demo2").owlCarousel({
+					loop: true,
+					margin: 20,
+					nav: false,
+					responsiveClass: true,
+					responsive: {
+						0: {
+							items: 1,
+							nav: false
+						},
+						1000: {
+							items: 1,
+							nav: false,
+							loop: false
+						}
+					}
+				})
+			})
+		</script>
+		<script>
+			$(function() {
+				$('.navbar-toggler').click(function() {
+					$('body').toggleClass('noscroll');
+				})
+			});
+		</script>
+		<script>
+			$(window).on("scroll", function() {
+				var scroll = $(window).scrollTop();
+
+				if (scroll >= 80) {
+					$("#site-header").addClass("nav-fixed");
+				} else {
+					$("#site-header").removeClass("nav-fixed");
+				}
+			});
+
+			$(".navbar-toggler").on("click", function() {
+				$("header").toggleClass("active");
+			});
+			$(document).on("ready", function() {
+				if ($(window).width() > 991) {
+					$("header").removeClass("active");
+				}
+				$(window).on("resize", function() {
+					if ($(window).width() > 991) {
+						$("header").removeClass("active");
+					}
+				});
+			});
+		</script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
